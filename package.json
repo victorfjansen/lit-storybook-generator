@@ -1,0 +1,46 @@
+{
+    "name": "lit-storybook-generator",
+    "version": "1.0.1",
+    "description": "A Vite plugin that generates Storybook files from LIT components",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "dev": "tsc --watch",
+        "clean": "rimraf dist",
+        "prepublishOnly": "npm run clean && npm run build"
+    },
+    "keywords": [
+        "vite-plugin",
+        "lit",
+        "storybook",
+        "web-components"
+    ],
+    "author": "Victor Jansen",
+    "license": "MIT",
+    "dependencies": {
+        "@babel/parser": "^7.23.0",
+        "@babel/traverse": "^7.23.0",
+        "@babel/types": "^7.23.0",
+        "glob": "^10.3.10"
+    },
+    "devDependencies": {
+        "@types/babel__traverse": "^7.20.2",
+        "@types/glob": "^8.1.0",
+        "@types/node": "^20.8.6",
+        "rimraf": "^5.0.5",
+        "typescript": "^5.2.2",
+        "vite": "^5.0.8"
+    },
+    "peerDependenciesMeta": {
+        "vite": {
+            "optional": true
+        },
+        "@storybook/web-components-vite": {
+            "optional": true
+        }
+    }
+}
