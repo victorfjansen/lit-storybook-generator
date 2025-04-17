@@ -103,10 +103,10 @@ function extractLitProperties(fileContent: string): Record<string, LitProperty> 
     });
 
     traverse(ast, {
-      ClassProperty(path: any) {
+      ClassProperty(path) {
         // Check if it's a property with @property or @state decorator
         const decorators = path.node.decorators || [];
-        const isLitProperty = decorators.some((decorator: any) => {
+        const isLitProperty = decorators.some(decorator => {
           if (t.isCallExpression(decorator.expression)) {
             const callee = decorator.expression.callee;
             return t.isIdentifier(callee) &&
