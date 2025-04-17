@@ -5,42 +5,47 @@
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "files": [
-        "dist"
+      "dist"
     ],
     "scripts": {
-        "build": "tsc",
-        "dev": "tsc --watch",
-        "clean": "rimraf dist",
-        "prepublishOnly": "npm run clean && npm run build"
+      "build": "tsc",
+      "dev": "tsc --watch",
+      "clean": "rimraf dist",
+      "prepublishOnly": "npm run clean && npm run build"
     },
     "keywords": [
-        "vite-plugin",
-        "lit",
-        "storybook",
-        "web-components"
+      "vite-plugin",
+      "lit",
+      "storybook",
+      "web-components"
     ],
     "author": "Victor Jansen",
     "license": "MIT",
     "dependencies": {
-        "@babel/parser": "^7.23.0",
-        "@babel/traverse": "^7.23.0",
-        "@babel/types": "^7.23.0",
-        "glob": "^10.3.10"
+      "@babel/parser": "^7.23.0",
+      "@babel/traverse": "^7.23.0",
+      "@babel/types": "^7.23.0",
+      "glob": "^10.3.10"
     },
     "devDependencies": {
-        "@types/babel__traverse": "^7.20.2",
-        "@types/glob": "^8.1.0",
-        "@types/node": "^20.8.6",
-        "rimraf": "^5.0.5",
-        "typescript": "^5.2.2",
-        "vite": "^5.0.8"
+      "@types/babel__traverse": "^7.20.2",
+      "@types/glob": "^8.1.0",
+      "@types/node": "^20.8.6",
+      "rimraf": "^5.0.5",
+      "typescript": "~5.7.2",
+      "vite": "^6.3.1",
+      "@storybook/web-components": "^8.6.12",
+      "@storybook/web-components-vite": "^8.6.12"
     },
     "peerDependenciesMeta": {
-        "vite": {
-            "optional": true
-        },
-        "@storybook/web-components-vite": {
-            "optional": true
-        }
+      "vite": {
+        "optional": true
+      },
+      "@storybook/web-components-vite": {
+        "optional": true
+      },
+      "@storybook/web-components": {
+        "optional": true
+      }
     }
-}
+  }
