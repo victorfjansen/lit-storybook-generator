@@ -1,6 +1,6 @@
 {
   "name": "lit-storybook-generator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A Vite plugin that generates Storybook files from LIT components",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
